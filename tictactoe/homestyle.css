@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background:linear-gradient(to right,rgba(252, 25, 225, 0.288),rgba(225, 221, 221, 0.77)),rgba(9, 9, 9, 0.912);
+    margin: 0;
+    padding: 0;
+}
+.homePage {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(26, 0, 102); 
+}
+span {
+    color: rgba(255, 68, 0, 0.725);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+.container form {
+    width: max-content;
+    height: max-content;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid rgba(134, 131, 131, 0.573);
+    border-radius: 10px;
+    box-shadow: 5px 0px 30px 5px rgba(234, 222, 145, 0.451);
+    background: linear-gradient( to bottom right,rgba(120, 198, 17, 0.612),rgba(0, 0, 255, 0.319),rgba(255, 0, 0, 0.423));
+}
+label{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 254, 254);
+}
+input{
+    color: white;
+    width: auto;
+    height: 30px;
+    background:rgba(224, 224, 224, 0.318) ;
+    border: none;
+    border-radius: 5px;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.741);
+    padding-left: 5px;
+}
+button{
+    background: rgb(42, 236, 42);
+    border: none;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,9 +1,18 @@
+function getQueryParam(param) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(param);
+}
+
+const player1Name = getQueryParam('p1');
+const player2Name = getQueryParam('p2');
+
 const cells = document.querySelectorAll('.cell');
 const resetButton = document.getElementById('reset-button');
 let currentPlayer = 'X';
 let board = Array(9).fill(null);
 
 const checkWinner = () => {
+
     const winningCombinations = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
         [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
@@ -13,7 +22,8 @@ const checkWinner = () => {
     for (let combo of winningCombinations) {
         const [a, b, c] = combo;
         if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-            setTimeout(() => alert(`${board[a]} wins!`), 100);
+            let winnwerName = board[a] === 'X' ? player1Name : player2Name;
+            setTimeout(() => alert(`${winnwerName} wins in game!`), 100);
             return true;
         }
     }

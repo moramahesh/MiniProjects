@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #3625c7ce;
+    background: linear-gradient(to right, rgba(225, 179, 233, 0.6),rgba(128, 30, 214, 0.479),rgba(129, 129, 142, 0.605));
     margin: 0;
     padding: 0;
 }
@@ -9,21 +9,27 @@ body {
 .tic-tac-toe-board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    gap: 4px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 10%;
+    align-items: center;
     justify-content: center;
 }
 
 .cell {
     width: 100px;
     height: 100px;
-    background-color: #fff;
-    border: 2px solid #000;
+    background-color: #faf3fa;
+    border: 1px solid #8d8d8dcc;
     font-size: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 button {
@@ -38,5 +44,5 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #126016;
 }
